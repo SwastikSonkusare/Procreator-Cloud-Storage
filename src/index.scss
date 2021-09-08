@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+  min-height: 100vh;
+
+  //   @media only screen and (min-width: 81.25em) {
+  //     font-size: 70.5%; //1rem = 13.5px
+  //   }
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-block-end: 2rem;
+}
+
+img {
+  display: block;
+}

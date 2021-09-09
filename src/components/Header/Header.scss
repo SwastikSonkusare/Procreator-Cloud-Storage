@@ -13,14 +13,14 @@
     height: 40px;
   }
 
-  // &__custom-shape-divider-bottom-1631170059 .shape-fill {
-  //   fill: #4274eb;
-  // }
-
   &__nav {
     background-color: #89aafa;
     padding: 2rem 2rem 0 2rem;
-    height: 85px;
+    height: 90px;
+
+    &.default {
+      background-color: #e8efff;
+    }
 
     width: 100%;
     display: flex;

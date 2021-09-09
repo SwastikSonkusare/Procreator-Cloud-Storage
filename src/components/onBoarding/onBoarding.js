@@ -17,7 +17,9 @@ const onBoarding = () => {
       <div className="onboard__container">
         <p>Your cloud storage safe and sound</p>
 
-        <img src={rightArrow} alt="rightArrow"></img>
+        <a href="/home">
+          <img src={rightArrow} alt="rightArrow"></img>
+        </a>
       </div>
     </div>
   );

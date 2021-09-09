@@ -22,7 +22,7 @@ const Header = () => {
           ))}
         </ul>
       </div>
-      <div class="header__custom-shape-divider-bottom-1631170059">
+      <div className="header__custom-shape-divider-bottom-1631170059">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

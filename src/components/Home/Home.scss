@@ -6,7 +6,7 @@
 
   &__header {
     background: rgb(66, 116, 235);
-    padding: 0 3rem 2.5rem 3rem;
+    padding: 0 3rem 10rem 3rem;
 
     & h2 {
       font-weight: 500;
@@ -65,6 +65,44 @@
       height: 8px;
       border-radius: 1000px;
       background-color: #ff6aa2;
+    }
+  }
+
+  &__container {
+    background-color: #fff;
+    padding: 2rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -4rem;
+  }
+
+  &__input {
+    position: relative;
+
+    & input {
+      width: 100%;
+      padding: 1.3rem 2rem 1.3rem 4.2rem;
+      border: none;
+      border-radius: 30px;
+      background-color: #edf1fa;
+
+      &::placeholder {
+        color: #8890a6;
+        font-weight: 500;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & img {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      top: 30%;
+      left: 3%;
+      margin-left: 4px;
     }
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
 import wave from "../../assets/waves.svg";
+import searchIcon from "../../assets/314807_search_icon.svg";
 import Header from "../Header/Header";
 
 import buttonSmallIcon from "../../assets/buttons_small.png";
@@ -28,6 +29,13 @@ const Home = () => {
         </p>
 
         <div className="home__skillbar"></div>
+      </div>
+
+      <div className="home__container">
+        <div className="home__input">
+          <input type="text" placeholder="Search"></input>
+          <img src={searchIcon} alt="search"></img>
+        </div>
       </div>
     </div>
   );

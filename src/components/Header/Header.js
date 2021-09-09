@@ -3,7 +3,7 @@ import React from "react";
 import connectionIcon from "../../assets/Cellular Connection.png";
 import wifiIcon from "../../assets/Wifi.png";
 import batteryIcon from "../../assets/Battery.png";
-import wave from "../../assets/waves.svg";
+// import wave from "../../assets/waves.svg";
 
 import "./Header.scss";
 

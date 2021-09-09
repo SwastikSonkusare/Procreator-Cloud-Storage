@@ -1,8 +1,9 @@
 import React from "react";
-import OnBoarding from "./components/onBoarding/onBoarding";
+import Home from "./components/Home/Home";
+import OnBoarding from "./components/OnBoarding/onBoarding";
 
 const App = () => {
-  return <OnBoarding />;
+  return <Home />;
 };
 
 export default App;

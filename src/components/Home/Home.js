@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
 // import wave from "../../assets/waves.svg";
-import searchIcon from "../../assets/314807_search_icon.svg";
 import Header from "../Header/Header";
 
 import buttonSmallIcon from "../../assets/buttons_small.png";
 
 import "./Home.scss";
 import Card from "../Card/Card";
+import Input from "../Input/Input";
 
 const Home = () => {
   const tabTitles = ["files", "folders"];
@@ -36,10 +36,7 @@ const Home = () => {
       </div>
 
       <div className="home__container">
-        <div className="home__input">
-          <input type="text" placeholder="Search"></input>
-          <img src={searchIcon} alt="search"></img>
-        </div>
+        <Input />
 
         <div className="home__tabs">
           {tabTitles.map((title) => (

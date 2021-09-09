@@ -75,36 +75,6 @@
     margin-top: -4rem;
   }
 
-  &__input {
-    position: relative;
-    padding-inline: 2rem;
-
-    & input {
-      width: 100%;
-      padding: 1.3rem 2rem 1.3rem 4.2rem;
-      border: none;
-      border-radius: 30px;
-      background-color: #edf1fa;
-
-      &::placeholder {
-        color: #8890a6;
-        font-weight: 500;
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
-
-    & img {
-      width: 16px;
-      height: 16px;
-      position: absolute;
-      top: 32%;
-      left: 8%;
-      margin-left: 4px;
-    }
-  }
 
   &__tabs {
     margin-block: 2rem;

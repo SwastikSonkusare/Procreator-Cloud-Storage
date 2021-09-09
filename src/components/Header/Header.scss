@@ -17,21 +17,21 @@
     background-color: #89aafa;
     padding: 2rem 2rem 0 2rem;
     height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 
     &.default {
       background-color: #e8efff;
     }
 
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
 
     & span {
       color: #345095;
       font-size: 14px;
       // font-family: SFProText-Semibold;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: -0.28px;
     }
 

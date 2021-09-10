@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
-import icon1 from "../assets/icons_tab bar_tab (4).png";
-import icon2 from "../assets/icons_tab bar_tab (1).png";
-import icon3 from "../assets/icons_tab bar_action.png";
-import icon4 from "../assets/icons_tab bar_tab (6).png";
-import icon5 from "../assets/icons_tab bar_tab (3).png";
+import icon1 from "../../assets/images/icons_tab bar_tab (4).png";
+import icon2 from "../../assets/images/icons_tab bar_tab (1).png";
+import icon3 from "../../assets/images/icons_tab bar_action.png";
+import icon4 from "../../assets/images/icons_tab bar_tab (6).png";
+import icon5 from "../../assets/images/icons_tab bar_tab (3).png";
 
-import icon6 from "../assets/icons_tab bar_tab.png";
-import icon7 from "../assets/icons_tab bar_tab (5).png";
-import icon8 from "../assets/icons_tab bar_tab (10).png";
-import icon9 from "../assets/icons_tab bar_tab (12).png";
+import icon6 from "../../assets/images/icons_tab bar_tab.png";
+import icon7 from "../../assets/images/icons_tab bar_tab (5).png";
+import icon8 from "../../assets/images/icons_tab bar_tab (10).png";
+import icon9 from "../../assets/images/icons_tab bar_tab (12).png";
 
 import "./Navbar.scss";
 
-const Navbar = () => {
+const Navbar = ({ url }) => {
   const navbarIcons = [
     {
       id: 1,
@@ -52,24 +52,26 @@ const Navbar = () => {
     },
   ];
 
-  const [active, setActive] = useState("");
+  // const [active, setActive] = useState("");
 
   return (
     <nav className="navbar">
-      {navbarIcons.map((navbarIcon) => (
+      {navbarIcons.map((navbarIcon, i) => (
         <a
           href={navbarIcon.link}
           className="navbar__link"
-          onClick={() => setActive(navbarIcon.title)}
+          // onClick={() => setActive(navbarIcon.title)}
+          key={i}
         >
           <img
             src={
-              active === navbarIcon.title
+              url === navbarIcon.link
                 ? navbarIcon.activeIcon
                 : navbarIcon.defaultIcon
             }
             alt="icon"
             className="navbar__image"
+            key={i}
           ></img>
         </a>
       ))}

@@ -1,8 +1,10 @@
 import React from "react";
 
-import user1 from "../../assets/user-1.jpg";
-import user2 from "../../assets/user-2.jpg";
-import user3 from "../../assets/user-3.jpg";
+import user1 from "../../assets/images/user-1.jpg";
+import user2 from "../../assets/images/user-2.jpg";
+import user3 from "../../assets/images/user-3.jpg";
+
+import icon from "../../assets/images/Combined Shape.png";
 
 import "./Card.scss";
 
@@ -42,11 +44,7 @@ const Card = () => {
         <div className="card" key={content.id}>
           <div className="card__header">
             <p>{content.header}</p>
-            <div className="card__notify">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+            <img src={icon} alt="icon"></img>
           </div>
 
           <div>

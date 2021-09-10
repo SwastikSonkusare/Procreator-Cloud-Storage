@@ -2,18 +2,22 @@ import React from "react";
 import Header from "../Header/Header";
 import Input from "../Input/Input";
 
-import icon1 from "../../assets/icons_with background_link.png";
-import icon2 from "../../assets/icons_with background_link (2).png";
-import icon3 from "../../assets/icons_with background_category_core.png";
-import icon4 from "../../assets/icons_with background_link (1).png";
+import icon1 from "../../assets/images/icons_with background_link.png";
+import icon2 from "../../assets/images/icons_with background_link (2).png";
+import icon3 from "../../assets/images/icons_with background_category_core.png";
+import icon4 from "../../assets/images/icons_with background_link (1).png";
 
-import icon5 from "../../assets/icons_with background_category.png";
-import icon6 from "../../assets/icons_with background_category (1).png";
-import icon7 from "../../assets/icons_with background_category (2).png";
+import icon5 from "../../assets/images/icons_with background_category.png";
+import icon6 from "../../assets/images/icons_with background_category (1).png";
+import icon7 from "../../assets/images/icons_with background_category (2).png";
+import icon8 from "../../assets/images/Combined Shape.png";
 
 import "./LocalStorage.scss";
+import Navbar from "../Navbar/Navbar";
 
 const LocalStorage = () => {
+  const url = window.location.pathname;
+
   const storageIcons = [
     {
       id: 1,
@@ -69,48 +73,49 @@ const LocalStorage = () => {
   ];
 
   return (
-    <div className="storage">
-      <Header />
+    <>
+      <div className="storage">
+        <Header />
 
-      <main className="notification__container">
-        <h2>
-          <span>Local Storage</span>
-        </h2>
+        <main className="notification__container">
+          <h2>
+            <span>Local Storage</span>
+          </h2>
 
-        <Input />
+          <Input />
 
-        <div className="storage__container">
-          {storageIcons.map((storageIcon) => (
-            <div key={storageIcon.id}>
-              <img src={storageIcon.icon} alt="icon"></img>
-              <span>{storageIcon.title}</span>
-            </div>
-          ))}
-        </div>
+          <div className="storage__container">
+            {storageIcons.map((storageIcon) => (
+              <div key={storageIcon.id}>
+                <img src={storageIcon.icon} alt="icon"></img>
+                <span>{storageIcon.title}</span>
+              </div>
+            ))}
+          </div>
 
-        <div className="storage__cards">
-          {storageCards.map((card) => (
-            <div className="storage__cards-container">
-              <div className="storage__cards-left_section">
-                <img src={card.icon} alt="icon"></img>
+          <div className="storage__cards">
+            {storageCards.map((card, i) => (
+              <div className="storage__cards-container" key={i}>
+                <div className="storage__cards-left_section">
+                  <img src={card.icon} alt="icon"></img>
 
-                <div>
-                  <h4>{card.title}</h4>
-                  <span>
-                    {card.type} <div>.</div> {card.size}
-                  </span>
+                  <div>
+                    <h4>{card.title}</h4>
+                    <span>
+                      {card.type} <div>.</div> {card.size}
+                    </span>
+                  </div>
+                </div>
+                <div className="storage__cards-right_section">
+                  <img src={icon8} alt="icon"></img>
                 </div>
               </div>
-              <div className="storage__cards-right_section card__notify">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </main>
-    </div>
+            ))}
+          </div>
+        </main>
+      </div>
+      <Navbar url={url} />
+    </>
   );
 };
 

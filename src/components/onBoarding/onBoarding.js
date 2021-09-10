@@ -1,7 +1,7 @@
 import React from "react";
 
-import rightArrow from "../../assets/icons_tab bar_stats copy.png";
-import illustration from "../../assets/Illustration.png";
+import rightArrow from "../../assets/images/icons_tab bar_stats copy.png";
+import illustration from "../../assets/images/Illustration.png";
 
 import "./onBoarding.scss";
 

@@ -1,8 +1,8 @@
 import React from "react";
 
-import connectionIcon from "../../assets/Cellular Connection.png";
-import wifiIcon from "../../assets/Wifi.png";
-import batteryIcon from "../../assets/Battery.png";
+import connectionIcon from "../../assets/images/Cellular Connection.png";
+import wifiIcon from "../../assets/images/Wifi.png";
+import batteryIcon from "../../assets/images/Battery.png";
 // import wave from "../../assets/waves.svg";
 
 import "./Header.scss";

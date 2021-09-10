@@ -2,9 +2,6 @@
 
 .onboard {
   position: relative;
-  // max-width: 375px;
-  // height: 100vh;
-  // margin: 0 auto;
 
   &__illustration {
     width: 100%;
@@ -25,7 +22,6 @@
       margin-left: auto;
       color: $color-secondary-indigo;
       font-size: 24px;
-      // font-family: AvenirNext-DemiBold;
       font-weight: 600;
       text-align: right;
       line-height: 3rem;

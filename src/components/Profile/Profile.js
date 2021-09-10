@@ -48,7 +48,7 @@ const Profile = () => {
           <div className="profile__container-device">
             <div>
               <span>Devices</span>
-              <small>iPhone, Macbook, iPad management</small>
+              <small>iPhone, Macbook, iPad</small>
             </div>
             <img src={arrowIcon} alt="arrow"></img>
           </div>

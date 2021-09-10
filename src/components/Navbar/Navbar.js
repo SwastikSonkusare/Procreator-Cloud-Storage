@@ -52,29 +52,25 @@ const Navbar = ({ url }) => {
     },
   ];
 
-  // const [active, setActive] = useState("");
-
   return (
     <nav className="navbar">
-      {navbarIcons.map((navbarIcon, i) => (
-        <a
-          href={navbarIcon.link}
-          className="navbar__link"
-          // onClick={() => setActive(navbarIcon.title)}
-          key={i}
-        >
-          <img
-            src={
-              url === navbarIcon.link
-                ? navbarIcon.activeIcon
-                : navbarIcon.defaultIcon
-            }
-            alt="icon"
-            className="navbar__image"
-            key={i}
-          ></img>
-        </a>
-      ))}
+      <div>
+        {navbarIcons.map((navbarIcon, i) => (
+          <a href={navbarIcon.link} key={i}>
+            <img
+              src={
+                url === navbarIcon.link
+                  ? navbarIcon.activeIcon
+                  : navbarIcon.defaultIcon
+              }
+              alt="icon"
+              key={i}
+            ></img>
+          </a>
+        ))}
+      </div>
+
+      <div className="navbar__border"></div>
     </nav>
   );
 };

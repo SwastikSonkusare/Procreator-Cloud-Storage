@@ -34,6 +34,7 @@ const Upload = () => {
               <div onClick={() => setOpen(false)}>
                 <img src={crossIcon} alt="icon"></img>
               </div>
+              <div></div>
             </div>
           </div>
         </>

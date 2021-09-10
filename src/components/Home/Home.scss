@@ -1,17 +1,12 @@
 @import "../../sass/variables";
 
 .home {
-  // max-width: 375px;
-  // height: 100vh;
-  // margin: 0 auto;
-
   &__header {
     background: $color-royalblue;
     padding: 0 3rem 7rem 3rem;
 
     & h2 {
       font-weight: 500;
-      //   font-family: AvenirNext-DemiBold;
       margin-bottom: 2rem;
       line-height: 2.5rem;
       & span {

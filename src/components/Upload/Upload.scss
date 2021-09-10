@@ -1,7 +1,9 @@
+@import "../../sass/variables";
+
 .upload {
   &__container {
     position: fixed;
-    background-color: #fff;
+    background-color: $color-white;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -12,6 +14,10 @@
     border-top-left-radius: 12rem;
     border-top-right-radius: 12rem;
     z-index: 1000;
+
+    & div {
+      cursor: pointer;
+    }
 
     & div:nth-child(1) {
       position: absolute;
@@ -36,6 +42,17 @@
       position: absolute;
       bottom: 2rem;
       left: 50%;
+      transform: translateX(-50%);
+    }
+    & div:nth-child(5) {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      z-index: 1000;
+      width: 14.5rem;
+      height: 5px;
+      border-radius: 100px;
+      background-color: $color-mischka;
       transform: translateX(-50%);
     }
   }

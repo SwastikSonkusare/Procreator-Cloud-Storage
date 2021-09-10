@@ -34,7 +34,7 @@ const Navbar = ({ url }) => {
       defaultIcon: icon3,
       activeIcon: icon3,
       title: "modal",
-      link: "/",
+      link: "/upload",
     },
     {
       id: 4,

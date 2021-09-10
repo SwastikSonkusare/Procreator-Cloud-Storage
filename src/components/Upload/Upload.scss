@@ -1,0 +1,49 @@
+.upload {
+  &__container {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0px;
+    height: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-top-left-radius: 12rem;
+    border-top-right-radius: 12rem;
+    z-index: 1000;
+
+    & div:nth-child(1) {
+      position: absolute;
+      top: 5rem;
+      left: 4rem;
+    }
+
+    & div:nth-child(2) {
+      position: absolute;
+      left: 50%;
+      top: 2rem;
+      transform: translateX(-50%);
+    }
+
+    & div:nth-child(3) {
+      position: absolute;
+      right: 4rem;
+      top: 5rem;
+    }
+
+    & div:nth-child(4) {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}

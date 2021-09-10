@@ -10,10 +10,6 @@
 html {
   font-size: 62.5%; //1rem = 10px
   min-height: 100vh;
-
-  @media only screen and (max-width: 29em) {
-    font-size: 50%; //1rem = 8px
-  }
 }
 
 body {

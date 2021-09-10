@@ -24,12 +24,15 @@ const Upload = () => {
             <div className="upload__container">
               <div>
                 <img src={scanIcon} alt="icon"></img>
+                <span>Scan</span>
               </div>
               <div>
                 <img src={cameraIcon} alt="icon"></img>
+                <span>Photo</span>
               </div>
               <div>
                 <img src={uploadIcon} alt="icon"></img>
+                <span>Upload</span>
               </div>
               <div onClick={() => setOpen(false)}>
                 <img src={crossIcon} alt="icon"></img>

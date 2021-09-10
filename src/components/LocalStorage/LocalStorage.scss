@@ -32,6 +32,8 @@
     grid-gap: 2rem;
     margin-block-start: 3.5rem;
     padding-inline: 2rem;
+    overflow-y: scroll;
+    height: 20rem;
 
     &-container {
       display: flex;

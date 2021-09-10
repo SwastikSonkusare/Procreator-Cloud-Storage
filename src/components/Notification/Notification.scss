@@ -9,9 +9,8 @@
         font-size: 3.4rem;
         font-weight: 600;
       }
-
-      @media only screen and (min-width: 37.5em) {
-        text-align: center;
+      @media only screen and (max-width: 25em) {
+        margin-bottom: 2.5rem;
       }
     }
   }

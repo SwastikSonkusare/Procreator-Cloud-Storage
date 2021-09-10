@@ -18,10 +18,10 @@
   &__nav {
     background-color: $color-malibu;
     padding: 2rem 2rem 0 2rem;
-    height: 90px;
+    height: 10rem;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-start;
 
     &.default {
       background-color: $color-zumthor;

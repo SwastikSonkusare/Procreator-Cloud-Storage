@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
+import Navbar from "../Navbar/Navbar";
 import Input from "../Input/Input";
 
 import icon1 from "../../assets/images/icons_with background_link.png";
@@ -13,7 +14,6 @@ import icon7 from "../../assets/images/icons_with background_category (2).png";
 import icon8 from "../../assets/images/Combined Shape.png";
 
 import "./LocalStorage.scss";
-import Navbar from "../Navbar/Navbar";
 
 const LocalStorage = () => {
   const url = window.location.pathname;

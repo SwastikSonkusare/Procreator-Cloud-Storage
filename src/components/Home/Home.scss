@@ -6,7 +6,7 @@
     padding: 0 3rem 7rem 3rem;
 
     & h2 {
-      font-weight: 500;
+      font-weight: 600;
       margin-bottom: 2rem;
       line-height: 2.5rem;
       & span {
@@ -33,7 +33,7 @@
     display: flex;
     grid-gap: 1rem;
     align-items: center;
-    font-weight: 500;
+    font-weight: 600;
 
     & span:nth-child(1) {
       color: $color-white;
@@ -87,7 +87,7 @@
     background-color: transparent;
     border: none;
     color: $color-manatee;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     width: 140px;
 

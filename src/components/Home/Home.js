@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 
-// import wave from "../../assets/waves.svg";
 import Header from "../Header/Header";
+import Card from "../Card/Card";
+import Input from "../Input/Input";
+import Navbar from "../Navbar/Navbar";
 
 import buttonSmallIcon from "../../assets/images/buttons_small.png";
 
 import "./Home.scss";
-import Card from "../Card/Card";
-import Input from "../Input/Input";
-import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
   const tabTitles = ["files", "folders"];

@@ -3,7 +3,6 @@ import React from "react";
 import connectionIcon from "../../assets/images/Cellular Connection.png";
 import wifiIcon from "../../assets/images/Wifi.png";
 import batteryIcon from "../../assets/images/Battery.png";
-// import wave from "../../assets/waves.svg";
 
 import "./Header.scss";
 
@@ -28,7 +27,7 @@ const Header = () => {
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="30 0 1200 120"
+          viewBox="0 0 1200 120"
           preserveAspectRatio="none"
         >
           <path

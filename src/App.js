@@ -7,6 +7,7 @@ import Notification from "./components/Notification/Notification";
 import OnBoarding from "./components/OnBoarding/onBoarding";
 import LocalStorage from "./components/LocalStorage/LocalStorage";
 import Navbar from "./Navbar/Navbar";
+import Profile from "./Profile/Profile";
 
 const App = () => {
   return (
@@ -16,12 +17,14 @@ const App = () => {
         <Route path="/home" exact component={Home} />
         <Route path="/notification" exact component={Notification} />
         <Route path="/localstorage" exact component={LocalStorage} />
+        <Route path="/profile" exact component={Profile} />
       </Switch>
 
       <Switch>
         <Route path="/home" exact component={Navbar} />
         <Route path="/notification" exact component={Navbar} />
         <Route path="/localstorage" exact component={Navbar} />
+        <Route path="/profile" exact component={Navbar} />
       </Switch>
 
       {/* <Navbar /> */}

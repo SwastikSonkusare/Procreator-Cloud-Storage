@@ -1,0 +1,141 @@
+.profile {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+    margin: 1rem 0 2rem 0;
+    & h4 {
+      & span {
+        color: #345095;
+        font-size: 3.4rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__statusbar {
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    padding-left: 2rem;
+
+    & span:nth-child(1) {
+      color: #3c64c7;
+      font-size: 2rem;
+    }
+    & span:nth-child(2) {
+      color: #dde6ff;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__skillbar {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+    height: 6px;
+    border-radius: 1000px;
+    background-color: #dde6ff;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: calc(100%+10px);
+      left: 0;
+      width: 55%;
+      height: 6px;
+      border-radius: 1000px;
+      background-color: #ff6aa2;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+    & button {
+      width: 325px;
+      height: 48px;
+      color: #ff6aa2;
+      font-weight: 500;
+      border: 2px solid #ff6aa2;
+      border-radius: 22px;
+      background-color: #fff;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    align-items: center;
+    overflow-y: scroll;
+    height: 15rem;
+
+    &-device {
+      & div {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0.5rem;
+
+        & small {
+          color: #ff6aa2;
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &-storage,
+    &-device,
+    &-uploads,
+    &-transfer {
+      background-color: #f5f7fc;
+      width: 325px;
+      height: 65px;
+      border-radius: 7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+
+      & span {
+        color: #242833;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  margin: 0 1.5rem;
+  width: 4.5rem;
+  height: 2.6rem;
+  background-color: #959fba;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  .inner-circle {
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 1.9rem;
+    background-color: #fff;
+  }
+}
+
+.toggle-btn.active .inner-circle {
+  margin: 0 1px 0 auto;
+}
+
+.toggle-btn.active {
+  background-color: #5786f8;
+}

@@ -48,7 +48,7 @@ const Navbar = () => {
       defaultIcon: icon5,
       activeIcon: icon9,
       title: "profile",
-      link: "/",
+      link: "/profile",
     },
   ];
 

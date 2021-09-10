@@ -22,7 +22,8 @@
   }
 
   &__border {
-    position: relative;
+    position: absolute;
+    bottom: 2rem;
     z-index: 1000;
     width: 14.5rem;
     height: 5px;

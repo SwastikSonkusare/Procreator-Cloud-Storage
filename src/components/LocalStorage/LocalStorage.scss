@@ -1,3 +1,5 @@
+@import "../../sass/variables";
+
 .storage {
   & main {
     & h2 {
@@ -19,7 +21,7 @@
       text-align: center;
 
       & span {
-        color: #7e8494;
+        color: $color-waterloo;
         font-size: 1.3rem;
         font-weight: 500;
       }
@@ -34,6 +36,10 @@
     padding-inline: 2rem;
     overflow-y: scroll;
     height: 20rem;
+
+    @media only screen and (max-width: 22.5em) {
+      height: 35rem;
+    }
 
     &-container {
       display: flex;
@@ -52,13 +58,13 @@
         grid-gap: 0.5rem;
 
         & h4 {
-          color: #242833;
+          color: $color-charade;
           font-size: 1.4rem;
           font-weight: 500;
         }
 
         & span {
-          color: #8890a6;
+          color: $color-manatee;
           display: flex;
           grid-gap: 2px;
           font-size: 1.4rem;

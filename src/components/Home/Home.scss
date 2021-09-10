@@ -1,11 +1,13 @@
+@import "../../sass/variables";
+
 .home {
   // max-width: 375px;
   // height: 100vh;
   // margin: 0 auto;
 
   &__header {
-    background: rgb(66, 116, 235);
-    padding: 0 3rem 10rem 3rem;
+    background: $color-royalblue;
+    padding: 0 3rem 7rem 3rem;
 
     & h2 {
       font-weight: 500;
@@ -13,12 +15,13 @@
       margin-bottom: 2rem;
       line-height: 2.5rem;
       & span {
-        font-size: 1.8rem;
-        color: #fff;
+        font-size: 3rem;
+        color: $color-white;
         letter-spacing: 1.5px;
 
         &:nth-child(2) {
-          color: #89aafa;
+          color: $color-malibu;
+          font-size: 1.8rem;
         }
       }
     }
@@ -38,11 +41,11 @@
     font-weight: 500;
 
     & span:nth-child(1) {
-      color: #fff;
+      color: $color-white;
       font-size: 2rem;
     }
     & span:nth-child(2) {
-      color: #89aafa;
+      color: $color-malibu;
       font-size: 1.8rem;
     }
   }
@@ -52,7 +55,7 @@
     width: 100%;
     height: 8px;
     border-radius: 1000px;
-    background-color: #3c64c7;
+    background-color: $color-secondary-indigo;
 
     &::before {
       content: "";
@@ -63,12 +66,12 @@
       width: 55%;
       height: 8px;
       border-radius: 1000px;
-      background-color: #ff6aa2;
+      background-color: $color-secondary-hot-pink;
     }
   }
 
   &__container {
-    background-color: #fff;
+    background-color: $color-white;
     padding-block: 2rem;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -80,7 +83,7 @@
     display: flex;
     grid-gap: 4rem;
     justify-content: center;
-    border-bottom: 2px solid #edf1fa;
+    border-bottom: 2px solid $color-linkwater;
   }
 
   &__button {
@@ -88,7 +91,7 @@
     padding-block: 1.5rem;
     background-color: transparent;
     border: none;
-    color: #8890a6;
+    color: $color-manatee;
     font-weight: 500;
     text-transform: uppercase;
     width: 140px;
@@ -98,7 +101,7 @@
     }
 
     &.active {
-      color: #345095;
+      color: $color-chambray;
 
       &::before {
         content: "";
@@ -120,8 +123,15 @@
     grid-template-rows: max-content max-content;
     grid-gap: 2rem;
     padding-inline: 2rem;
-    background-color: #fff;
+    background-color: $color-white;
     overflow-y: scroll;
     height: 40rem;
+
+    @media only screen and (max-width: 25em) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      grid-template-rows: repeat(4, max-content);
+      min-height: 75rem;
+    }
   }
 }

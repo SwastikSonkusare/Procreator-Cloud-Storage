@@ -1,3 +1,5 @@
+@import "../../sass/variables";
+
 .notification {
   //   background-color: #fff;
   // max-width: 375px;
@@ -7,7 +9,7 @@
     & h2 {
       margin: 2rem 0 6rem 3.2rem;
       & span {
-        color: #345095;
+        color: $color-chambray;
         font-size: 3.4rem;
         font-weight: 500;
       }
@@ -28,13 +30,13 @@
     margin-block: 2rem;
     text-align: center;
     & small {
-      color: #345095;
+      color: $color-chambray;
       font-size: 2rem;
       font-weight: 500;
     }
 
     & p {
-      color: #7e8494;
+      color: $color-waterloo;
       max-width: 28rem;
       margin: 1rem auto 0 auto;
       font-size: 1.5rem;

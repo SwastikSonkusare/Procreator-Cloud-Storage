@@ -13,9 +13,9 @@ html {
   font-size: 62.5%; //1rem = 10px
   min-height: 100vh;
 
-  //   @media only screen and (min-width: 81.25em) {
-  //     font-size: 70.5%; //1rem = 13.5px
-  //   }
+  @media only screen and (max-width: 29em) {
+    font-size: 50%; //1rem = 13.5px
+  }
 }
 
 body {

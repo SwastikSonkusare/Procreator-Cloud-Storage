@@ -1,3 +1,5 @@
+@import "../../sass/variables";
+
 .profile {
   &__header {
     display: flex;
@@ -23,11 +25,11 @@
     padding-left: 2rem;
 
     & span:nth-child(1) {
-      color: #3c64c7;
+      color: $color-secondary-indigo;
       font-size: 2rem;
     }
     & span:nth-child(2) {
-      color: #dde6ff;
+      color: $color-solitude;
       font-size: 1.8rem;
     }
   }
@@ -38,7 +40,7 @@
     width: 90%;
     height: 6px;
     border-radius: 1000px;
-    background-color: #dde6ff;
+    background-color: $color-solitude;
 
     &::before {
       content: "";
@@ -49,7 +51,7 @@
       width: 55%;
       height: 6px;
       border-radius: 1000px;
-      background-color: #ff6aa2;
+      background-color: $color-secondary-hot-pink;
     }
   }
 
@@ -60,11 +62,11 @@
     & button {
       width: 325px;
       height: 48px;
-      color: #ff6aa2;
+      color: $color-secondary-hot-pink;
       font-weight: 500;
-      border: 2px solid #ff6aa2;
+      border: 2px solid $color-secondary-hot-pink;
       border-radius: 22px;
-      background-color: #fff;
+      background-color: $color-white;
     }
   }
 
@@ -74,7 +76,7 @@
     grid-gap: 2rem;
     align-items: center;
     overflow-y: scroll;
-    height: 15rem;
+    height: 20rem;
 
     &-device {
       & div {
@@ -83,7 +85,7 @@
         grid-gap: 0.5rem;
 
         & small {
-          color: #ff6aa2;
+          color: $color-secondary-hot-pink;
           font-size: 1.2rem;
           font-weight: 500;
         }
@@ -94,7 +96,7 @@
     &-device,
     &-uploads,
     &-transfer {
-      background-color: #f5f7fc;
+      background-color: $color-primary-white-lilac;
       width: 325px;
       height: 65px;
       border-radius: 7px;
@@ -104,7 +106,7 @@
       padding: 2rem;
 
       & span {
-        color: #242833;
+        color: $color-charade;
         font-size: 1.5rem;
         font-weight: 500;
       }
@@ -119,7 +121,7 @@
   margin: 0 1.5rem;
   width: 4.5rem;
   height: 2.6rem;
-  background-color: #959fba;
+  background-color: $color-gullgray;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -128,7 +130,7 @@
     border-radius: 50%;
     width: 1.9rem;
     height: 1.9rem;
-    background-color: #fff;
+    background-color: $color-white;
   }
 }
 
@@ -137,5 +139,5 @@
 }
 
 .toggle-btn.active {
-  background-color: #5786f8;
+  background-color: $color-cornflowerblue;
 }

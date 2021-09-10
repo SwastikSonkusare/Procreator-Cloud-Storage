@@ -1,3 +1,5 @@
+@import "../../sass/variables";
+
 .card {
   padding: 2rem;
   background-color: #edf1fa;
@@ -9,7 +11,7 @@
     justify-content: space-between;
     margin-bottom: 0.3rem;
     & p {
-      color: #242833;
+      color: $color-charade;
       font-weight: 500;
       font-size: 1.4rem;
       max-width: 6rem;
@@ -21,7 +23,7 @@
     position: relative;
     display: flex;
     grid-gap: 2px;
-    color: #8890a6;
+    color: $color-manatee;
     font-size: 1.6rem;
     font-weight: 400;
 
@@ -45,7 +47,7 @@
       }
 
       &:not(:first-child) {
-        border-left: 3px solid #fff;
+        border-left: 3px solid $color-white;
       }
     }
 
@@ -53,8 +55,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #8890a6;
-      color: #fff;
+      background-color: $color-manatee;
+      color: $color-white;
       font-weight: 500;
     }
   }
@@ -68,7 +70,7 @@
       width: 4px;
       height: 4px;
       border-radius: 50%;
-      background-color: #8890a6;
+      background-color: $color-manatee;
     }
   }
 }

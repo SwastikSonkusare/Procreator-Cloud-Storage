@@ -1,3 +1,5 @@
+@import "../../sass/variables";
+
 .onboard {
   position: relative;
   // max-width: 375px;
@@ -21,7 +23,7 @@
     & p {
       max-width: 20rem;
       margin-left: auto;
-      color: #3c64c7;
+      color: $color-secondary-indigo;
       font-size: 24px;
       // font-family: AvenirNext-DemiBold;
       font-weight: 600;

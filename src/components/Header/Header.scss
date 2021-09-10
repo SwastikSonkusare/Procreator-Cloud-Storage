@@ -1,3 +1,5 @@
+@import "../../sass/variables";
+
 .header {
   &__custom-shape-divider-bottom-1631170059 {
     width: 100%;
@@ -14,7 +16,7 @@
   }
 
   &__nav {
-    background-color: #89aafa;
+    background-color: $color-malibu;
     padding: 2rem 2rem 0 2rem;
     height: 90px;
     display: flex;
@@ -22,7 +24,7 @@
     align-items: end;
 
     &.default {
-      background-color: #e8efff;
+      background-color: $color-zumthor;
     }
 
     width: 100%;

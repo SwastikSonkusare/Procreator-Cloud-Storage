@@ -1,8 +1,10 @@
 @import "../../sass/variables";
 
 .navbar {
+  max-width: 375px;
   position: fixed;
   bottom: 0;
+  left: 50%;
   width: 100%;
   height: 75px;
   box-shadow: $box-shadow;
@@ -13,6 +15,7 @@
   align-items: center;
   padding-inline: 2rem;
   margin-top: 1rem;
+  transform: translateX(-50%);
 
   & div:nth-child(1) {
     display: flex;

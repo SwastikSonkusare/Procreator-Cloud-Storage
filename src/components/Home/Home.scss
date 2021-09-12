@@ -1,6 +1,10 @@
 @import "../../sass/variables";
 
 .home {
+  max-width: 375px;
+  width: 100%;
+  margin: auto;
+
   &__header {
     background: $color-royalblue;
     padding: 0 3rem 7rem 3rem;
@@ -122,7 +126,7 @@
     overflow-y: scroll;
     height: 40rem;
 
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 22em) {
       grid-template-columns: 18.5rem;
       justify-content: center;
       grid-template-rows: repeat(4, max-content);

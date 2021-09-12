@@ -1,6 +1,9 @@
 @import "../../sass/variables";
 
 .storage {
+  max-width: 375px;
+  margin: 0 auto;
+
   & main {
     & h2 {
       margin-bottom: 2rem;
@@ -35,7 +38,9 @@
     margin-block-start: 3.5rem;
     padding-inline: 2rem;
     overflow-y: scroll;
-    height: 55vh;
+    height: calc(100vh - 45em);
+    // height: calc(100px + 18vh);
+    // height: calc(3em + 46rem);
 
     &-container {
       display: flex;

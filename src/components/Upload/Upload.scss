@@ -1,17 +1,23 @@
 @import "../../sass/variables";
 
 .upload {
+  max-width: 375px;
+  margin: 0 auto;
+
   &__container {
+    max-width: 375px;
+    height: 231px;
     position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: $color-white;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     bottom: 0px;
-    height: 22rem;
-    border-top-left-radius: 12rem;
-    border-top-right-radius: 12rem;
+    border-top-left-radius: 14rem;
+    border-top-right-radius: 14rem;
     z-index: 1000;
 
     & div {
@@ -30,26 +36,26 @@
 
     & div:nth-child(1) {
       position: absolute;
-      top: 5rem;
+      top: 7rem;
       left: 4rem;
     }
 
     & div:nth-child(2) {
       position: absolute;
       left: 50%;
-      top: 2rem;
+      top: 3rem;
       transform: translateX(-50%);
     }
 
     & div:nth-child(3) {
       position: absolute;
+      top: 7rem;
       right: 4rem;
-      top: 5rem;
     }
 
     & div:nth-child(4) {
       position: absolute;
-      bottom: 2rem;
+      bottom: 1rem;
       left: 50%;
       transform: translateX(-50%);
     }

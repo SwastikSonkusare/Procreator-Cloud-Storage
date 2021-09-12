@@ -1,7 +1,12 @@
 @import "../../sass/variables";
 
 .notification {
+  max-width: 375px;
+  margin: 0 auto;
+
   &__container {
+    margin-top: -2rem;
+    background-color: $color-white;
     & h2 {
       margin: 2rem 0 6rem 3.2rem;
       & span {

@@ -2,6 +2,8 @@
 
 .onboard {
   position: relative;
+  max-width: 375px;
+  margin: 0 auto;
 
   &__illustration {
     width: 100%;

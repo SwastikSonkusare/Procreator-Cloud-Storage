@@ -19,58 +19,60 @@ const Profile = () => {
       <div className="profile">
         <Header />
 
-        <div className="profile__header">
-          <h4>
-            <span>Profile</span>
-          </h4>
-          <img src={editIcon} alt="edit"></img>
-        </div>
-
-        <div className="profile__details">
-          <img src={userIcon} alt="user"></img>
-        </div>
-
-        <section className="profile__statusbar">
-          <span>32,5 GB free </span> <span>of 100 GB</span>
-        </section>
-
-        <div className="profile__skillbar"></div>
-
-        <div className="profile__button">
-          <button>Increase storage space</button>
-        </div>
-
-        <div className="profile__container">
-          <div className="profile__container-storage">
-            <span>Storage management</span>
-            <img src={arrowIcon} alt="arrow"></img>
+        <main className="notification__container">
+          <div className="profile__header">
+            <h4>
+              <span>Profile</span>
+            </h4>
+            <img src={editIcon} alt="edit"></img>
           </div>
-          <div className="profile__container-device">
-            <div>
-              <span>Devices</span>
-              <small>iPhone, Macbook, iPad</small>
+
+          <div className="profile__details">
+            <img src={userIcon} alt="user"></img>
+          </div>
+
+          <section className="profile__statusbar">
+            <span>32,5 GB free </span> <span>of 100 GB</span>
+          </section>
+
+          <div className="profile__skillbar"></div>
+
+          <div className="profile__button">
+            <button>Increase storage space</button>
+          </div>
+
+          <div className="profile__container">
+            <div className="profile__container-storage">
+              <span>Storage management</span>
+              <img src={arrowIcon} alt="arrow"></img>
             </div>
-            <img src={arrowIcon} alt="arrow"></img>
-          </div>
-          <div className="profile__container-uploads">
-            <span>Camera uploads</span>
-            <div
-              className={cameraToggleBtn ? "toggle-btn active" : "toggle-btn"}
-              onClick={() => setCameraToggleBtn((prevState) => !prevState)}
-            >
-              <div className="inner-circle"></div>
+            <div className="profile__container-device">
+              <div>
+                <span>Devices</span>
+                <small>iPhone, Macbook, iPad</small>
+              </div>
+              <img src={arrowIcon} alt="arrow"></img>
+            </div>
+            <div className="profile__container-uploads">
+              <span>Camera uploads</span>
+              <div
+                className={cameraToggleBtn ? "toggle-btn active" : "toggle-btn"}
+                onClick={() => setCameraToggleBtn((prevState) => !prevState)}
+              >
+                <div className="inner-circle"></div>
+              </div>
+            </div>
+            <div className="profile__container-transfer">
+              <span>Use data for transfer</span>
+              <div
+                className={dataToggleBtn ? "toggle-btn active" : "toggle-btn"}
+                onClick={() => setDataToggleBtn((prevState) => !prevState)}
+              >
+                <div className="inner-circle"></div>
+              </div>
             </div>
           </div>
-          <div className="profile__container-transfer">
-            <span>Use data for transfer</span>
-            <div
-              className={dataToggleBtn ? "toggle-btn active" : "toggle-btn"}
-              onClick={() => setDataToggleBtn((prevState) => !prevState)}
-            >
-              <div className="inner-circle"></div>
-            </div>
-          </div>
-        </div>
+        </main>
       </div>
       <Navbar url={url} />
     </>

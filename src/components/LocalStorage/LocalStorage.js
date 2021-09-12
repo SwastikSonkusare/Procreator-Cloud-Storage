@@ -70,6 +70,20 @@ const LocalStorage = () => {
       type: "doc",
       size: "2.3 mb",
     },
+    {
+      id: 5,
+      icon: icon7,
+      title: "Top secret archive",
+      type: "zip",
+      size: "3.7 gb",
+    },
+    {
+      id: 6,
+      icon: icon5,
+      title: "On the top of the world",
+      type: "doc",
+      size: "2.3 mb",
+    },
   ];
 
   return (

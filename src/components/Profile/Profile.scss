@@ -1,12 +1,15 @@
 @import "../../sass/variables";
 
 .profile {
+  max-width: 375px;
+  margin: 0 auto;
+
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 2rem;
-    margin: 1rem 0 2rem 0;
+    margin: 2rem 0 2rem 0;
     & h4 {
       & span {
         color: #345095;
@@ -72,12 +75,12 @@
   }
 
   &__container {
+    height: calc(100vh - 500px);
     display: flex;
     flex-direction: column;
     grid-gap: 2rem;
     align-items: center;
     overflow-y: scroll;
-    height: 71vh;
 
     &-device {
       & div {
